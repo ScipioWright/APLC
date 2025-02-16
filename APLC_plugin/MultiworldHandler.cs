@@ -444,7 +444,7 @@ public class MultiworldHandler
     {
         if (_deathLink)
             _dlService.SendDeathLink(new DeathLink(_session.Players.GetPlayerName(_slotInfo.Slot),
-                "failed the company."));
+                $"{_session.Players.GetPlayerName(_slotInfo.Slot)} failed the company."));
     }
 
     public void Tick(AplcEventArgs args)
